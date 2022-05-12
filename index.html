@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const name = ["Jorge", "Juan", "Jose", "John"];
+      for (let i = 0; i < name.length; i++) {
+        var note = // prompt("ingresa la nota para " + name[i]);
+       if (note.length < 10) {
+          alert("ingresa una nota valida para " + name[i]);
+        }
+        if (note < 5) {
+          alert(name[i] + " está suspendido, nota: " + note);
+        } else {
+          if (note >= 5 && note <= 10) {
+            alert(name[i] + " apróbo con " + note);
+          } else if (note > 10) {
+            alert("nota no valida para " + name[i]);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
